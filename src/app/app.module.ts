@@ -8,9 +8,10 @@ import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
 import { MaterialModule } from "./material.module";
 import { HttpClientModule } from "@angular/common/http";
+import { PaginatorComponent } from './movie/paginator/paginator.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, PaginatorComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
