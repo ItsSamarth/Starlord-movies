@@ -1,0 +1,8 @@
+{
+  "/movies": {
+    "target": "http://starlord.hackerearth.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

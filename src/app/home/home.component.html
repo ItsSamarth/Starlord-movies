@@ -1,0 +1,23 @@
+<section id="movies" fxLayout='column'>
+  <div class="filter">
+    <p>Showing {{movies.length+1}} Titles</p>
+  </div>
+  <mat-card *ngFor="let movie of movies| slice:startIndex:endIndex " class="movie-card">
+    <mat-card-header>
+      <mat-card-title>{{movie.movie_title}}</mat-card-title>
+      <mat-card-subtitle>{{movie.title_year}}</mat-card-subtitle>
+      <mat-card-subtitle>Genres-{{movie.genres}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <img src="https://dummyimage.com/250x250/f0f0f0/635f63">
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Ok</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <div class="pagination">
+    <button mat-raised-button (click)="setPage('prev')">Prev</button>
+    <button mat-raised-button (click)="setPage('next')" [disabled]="">Next</button>
+  </div>
+</section>

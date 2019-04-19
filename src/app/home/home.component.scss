@@ -1,0 +1,32 @@
+#movies {
+  //   .movie-card:nth-child(odd) {
+  //     background-image: linear-gradient(to left top, #4CB8C4, #3CD3AD);
+  //   }
+
+  .movie-card:nth-child(even) {
+    //   background-image: linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-color: #e7e9ef;
+  }
+
+  //   .movie-card {
+  //     width: 40%;
+  //     margin: 30px auto;
+  //     border-radius: 10px;
+  //     color: #ffffff;
+  //   }
+  .filter {
+    p {
+      color: #6c7483;
+    }
+  }
+
+  .movie-card {
+    margin: 1% 0%;
+    box-shadow: none;
+  }
+
+  .movie-card:hover {
+    box-shadow: 0 8px 8px rgba(10, 16, 20, 0.24), 0 0 8px rgba(10, 16, 20, 0.12);
+    z-index: 2;
+  }
+}
